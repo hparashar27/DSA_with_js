@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searching Techniques</title>
+</head>
+<body>
+    <h1>serching algorithms ---- </h1>
+    <script>
+// Linear search ->
+// In the case of the JS , the methods ->
+// Indexof , find , findof , includes all these methods using linear search algo -
+
+// Linear Search 
+// the time complexity -> LINEAR SEARCH O(n);
+
+function LinearSearch(arr,n){
+
+for(let i =0; i<arr.length ;i++){
+    if(arr[i]===n){
+        return i;
+    }
+    else{
+        console.log("the array doesnt contain the given element");
+    }
+}
+}
+console.log(LinearSearch([12,23,34,45,56,65,76,54,32],56)); ;
+
+// Binary Search for the Sorted array ->
+// the time complexity -> LINEAR SEARCH O(logn);
+
+// the pseudo code required for the binary search algorithm is like
+/*
+the function accepts a sorted array, and a value
+create two pointers left pointer points in starting of the array and the right pointer points to the end of the array
+
+*/
+
+// Naive String Searching Algorithm for the string ->
+// the time complexity -> LINEAR SEARCH O(m x n);
+
+// KMP String Searching Algo ( Improved version of the Navie String Searching Algo. ) ->
+// the time complexity -> LINEAR SEARCH O(n+m)=O(m);
+
+    </script>
+</body>
+</html>
