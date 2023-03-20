@@ -56,6 +56,31 @@ console.log(BinarySearch([1,2,3,4,5,6,7,8,9,10],10));
 
 // Naive String Searching Algorithm for the string ->
 // the time complexity -> LINEAR SEARCH O(m x n);
+// this searching technique is used to search for substring of the string in the string
+/*
+Loop over the Big String 
+Loop over the small string 
+if the character doesn't match than break out from the inner loop
+and if the character do match then keep going
+if you complete the inner loop then find the match , increment the count and return the count 
+*/
+
+function Naive_Search(Long,Short){
+    let count = 0;
+    for(let i = 0;i<Long.length;i++){
+        for(let j =0; Short.length;j++){
+            if(Short[i] !== Long[i+j]){
+                console.log("BREAK !");
+                break;
+            }
+            if(j===Short.length-1){
+                count++
+            }
+        }
+    }
+    return count ;
+}
+console.log(Naive_Search("Helelelelelelele","le"));
 
 // KMP String Searching Algo ( Improved version of the Navie String Searching Algo. ) ->
 // the time complexity -> LINEAR SEARCH O(n+m)=O(m);
