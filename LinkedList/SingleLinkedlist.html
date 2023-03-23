@@ -80,6 +80,20 @@ if(!this.head){
 return currentHead;
 }
 
+    // unshift method for adding the node in the starting of linked list
+    unshift(){
+        var newNode = new Node(val);
+if(!this.head){
+this.head = newNode ;
+this.tail = this.head ;
+}
+else{
+    newNode.next = this.head;
+    this.head = newNode;
+    this.length++
+    return this;
+}
+    };
 
 }
 
