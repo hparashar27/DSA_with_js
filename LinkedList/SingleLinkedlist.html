@@ -64,6 +64,22 @@ return this;
 }
         }
     
+// shift method for removing the node from the starting of linked list
+
+shift(){
+if(!this.head){
+    return undefined;
+}else{
+    let currentHead = this.head ;
+    this.head = currentHead.next;
+    this.length--;
+    if(this.length === 0){
+        this.tail = null;
+    }
+}
+return currentHead;
+}
+
 
 }
 
