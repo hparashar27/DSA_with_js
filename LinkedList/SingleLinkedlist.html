@@ -41,8 +41,33 @@ else{
 this.length++
 return this;
     }
+ // Pop method for removing the node from the end of linked list
+ pop(){
+        if(!this.head){
+            return undefined;
+        }
+        else{
+            let current = this.head;
+            let newTail = current;
+            while(current.next){
+                newTail = current;
+                current = current.next;
+            }
+        this.tail = newTail;
+        this.tail.next = null;
+        length--;
+        if(this.length === 0){
+        this.head = null;
+         this.tail = null;
+}
+    return current;
+}
+        }
+    
 
 }
+
+
 
     </script>
 </body>
