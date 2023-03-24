@@ -21,17 +21,41 @@
 
 // Helper funtions
 
-// getDigit 
+// GetDigit 
 
 function getDigit(num,n){
     return Math.floor((Math.abs(num)/Math.pow(10,n))) % 10 ;
 }
 getDigit(1234232,2);
 
-// MaxDigit -> 
+// DigitCount -> 
 
-function MaxDigit(num){
-    return Math.floor(Math.log10(Math.abs(num)) + 1)
+function DigitCount(num){
+    if (num === 0) return 1;
+    return Math.floor(Math.log10(Math.abs(num)) + 1);
+}
+
+// MostDigits 
+
+function MostDigits(nums){
+let maxDigits = 0;
+for(let i =0; i<nums.length ; i++){
+    maxDigits = Math.max(maxDigits,DigitCount(arr[i]));
+}
+return maxDigits;
+}
+
+function RadixSort(nums){
+    let length = MostDigits(nums);
+    for(let i =0 ; i<length ; i++){
+        let Bucket = Array.from({length:10},()=>[]);
+for(let j =0; j<nums.length ;j++){
+    let digit = getDigit(nums[j],i);
+    Bucket[digit].push(nums[i]);
+}
+nums = [].concat(...Bucket);
+    }
+    return arr;
 }
 
     </script>
