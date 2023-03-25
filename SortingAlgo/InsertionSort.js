@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
+
 
 function insertionSort(arr){
 	var currentVal;
@@ -22,6 +13,4 @@ function insertionSort(arr){
 }
 insertionSort([2,1,9,76,4])
 
-    </script>
-</body>
-</html>
+   

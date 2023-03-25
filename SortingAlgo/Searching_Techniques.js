@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Searching Techniques</title>
-</head>
-<body>
-    <h1>serching algorithms ---- </h1>
-    <script>
+
 // Linear search ->
 // In the case of the JS , the methods ->
 // Indexof , find , findof , includes all these methods using linear search algo -
@@ -84,7 +74,3 @@ console.log(Naive_Search("Helelelelelelele","le"));
 
 // KMP String Searching Algo ( Improved version of the Navie String Searching Algo. ) ->
 // the time complexity -> LINEAR SEARCH O(n+m)=O(m);
-
-    </script>
-</body>
-</html>

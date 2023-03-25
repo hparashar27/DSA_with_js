@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radix Sort</title>
-</head>
-<body>
-    <script>
+
         /*
         Bubble Sort = O(n^2)
         Insertion Sort = O(n^2)
@@ -58,7 +49,3 @@ nums = [].concat(...Bucket);
     return arr;
 }
 
-    </script>
-</body>
-
-</html>
