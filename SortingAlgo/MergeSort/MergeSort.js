@@ -24,3 +24,13 @@
             }
             return result;
         }
+
+        // In case of the merging of the two array we use recurrsion for the spiliting the given array in two halves ->
+
+        function MergeSort(arr){
+            let middle = Math.floor(arr.length/2);
+            let left = MergeSort(arr.slice(0,mid));
+            let right = MergeSort(arr.slice(mid));
+            arr = MergeTwoSortedArray(left,right);
+            return arr;
+        }
