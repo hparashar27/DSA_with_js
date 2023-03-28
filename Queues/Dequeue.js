@@ -11,4 +11,9 @@ class Node{
 this.val = val;
 this.next = next;
     }
+
+ 
 }
+
+// the Queue is abstract data structure based on the principle first in first out ->
+
