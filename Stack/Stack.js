@@ -1,4 +1,4 @@
-class Queue{
+class Stack{
     constructor(){
         this.start = null;
         this.last = null;
