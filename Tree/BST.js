@@ -43,4 +43,50 @@ return undefined;
             }
         }
     }
+
+    find(value){
+        if(this.root === null){
+            return false
+        }
+        let current = this.root;
+        found = false
+        while(current && !found){
+            if(value<current.value){
+current= current.left;
+            }
+            if(value>current.value){
+current=current.right;
+            }else{
+                found = true;
+            }
+        }
+        return current
+    }
+
+    contain(value){
+        if(this.root === null){
+            return false
+        }
+        let current = this.root;
+        found = false
+        while(current && !found){
+            if(value<current.value){
+current= current.left;
+            }
+            if(value>current.value){
+current=current.right;
+            }else{
+                return true;
+            }
+        }
+        return false
+    }
+}
+
+let tree = new BinarySearchTree();
+
+let arr = [12,3,4,32,34,54,24,124]
+
+for(let i=0;i<arr.length;i++){
+    tree.insert(arr[i]);
 }
