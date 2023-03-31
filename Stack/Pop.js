@@ -9,7 +9,7 @@ class Stack{
 class Node{
     constructor(val){
 this.val = val;
-this.next = next;
+this.next = null;
     }
         pop(){
             if(!this.first) return null;
