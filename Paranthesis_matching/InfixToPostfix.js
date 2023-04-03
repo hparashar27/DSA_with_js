@@ -1,31 +1,11 @@
 
 // In order to convert the infix to postfix we have to make a precedence and isoperand function  -
 
-// using array as a stack 
-function checkParenthesis(str) {
-    const stack = [];
-  
-    for (let i = 0; i < str.length; i++) {
-      if (str[i] === '(') {
-        stack.push(str[i]);
-      } else if (str[i] === ')') {
-        if (stack.length === 0) {
-          return false; // there is no matching opening parenthesis
-        }
-        stack.pop();
-      }
-    }
-  
-    return stack.length === 0; // if stack is empty, there are no unmatched parentheses
-  }
-  checkParenthesis("(1 + 2) * (3 - 4)");
-
-//   Using Stack for paranthesis matching 
 
 class Node{
     constructor(val){
         this.val = val;
-        this.next = next
+        this.next = null
     }
 }
 
@@ -85,11 +65,34 @@ return 1;
 }
 }
 
-isOperand(){
+isOperand(x){
 if(x==='+' || x==='*' || x ==='/' || x==='-'){
-    return false
+    return 0
 }else{
-    return true
+    return 1
+}
+}
+
+InfixToPostfix(infix){
+let i,j = 0;
+let postfix = [];
+let len = infix.length;
+while(infix[i] !== null){
+    if(this.isOperand(infix[i])){
+        postfix[j++]=infix[i++];
+    }
+    else{
+        if(this.pre(infix[i])>this.pre(this.top.val)){
+            this.push(infix[i++]);
+        }else{
+            postfix[j++] = this.pop()
+        }
+    }
+}
+while(this.top!==null){
+postfix[j++] = this.pop()
+postfix[j]!==null
+return postfix
 }
 }
 }
@@ -97,3 +100,4 @@ if(x==='+' || x==='*' || x ==='/' || x==='-'){
 let myStack = new Stack;
 myStack.Match("((1 + 2) * 3 - 4))") // false
 myStack.Match("((1 + 2) * (3 - 4))") // true
+InfixToPostfix("a+b*c-d/e");
