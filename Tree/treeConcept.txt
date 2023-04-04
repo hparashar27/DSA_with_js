@@ -1,0 +1,49 @@
+Tree concepts ->
+
+* Number of the trees from the given Number of the nodes n ?
+
+so there is a formula for the trees will be from unlabelled nodes of the nodes T(n) will be ->  
+T(n)= 2nCn/n+1
+so there is a formula for the trees will be from labelled nodes of the nodes T(n) will be ->  
+T(n)= {2nCn/n+1}*n! , where n! is for the filling 
+
+* Number of the Binary trees of maximum height from the given Number of the nodes n ?
+
+=> so there is a formula Number of the trees of maximum height will be from unlabelled nodes of the nodes T(n) will be -> 
+Tmax(n) = 2^(n-1);
+
+* How many numbers of nodes required to make a min and max height tree ?
+Where h is the height of the tree
+for the min height tree -> h+1 numbers of nodes required
+for the max height tree -> 2^(h+1)-1 numbers of nodes required
+* How many numbers of minimum and maximum tree height are formed from n nodes ?
+Max tree Height =>  n-1
+Min tree Height => log2(n+1) - 1
+
+ Strict Binary Tree ->
+
+If the height is h given then how many minimum nodes are required to form h  height tree ->
+N(min) => 2h+1
+N(max) => 2^(h-1) – 1
+If the n number of the nodes given then the min and max height of the tree ->
+H(min) => log2(n+1) - 1
+H(max) =>  (n-1)/2
+
+N- ary trees ->
+N ary trees are those trees which have atmost N number of degree , not more than N like
+
+Strict N ary tree –>
+The tree which are having either 0 children or N children 
+
+For the Strict n ary trees ->
+What is the number of nodes required to form h height tree ->
+Minimum Nodes = n*h + 1
+Maximum Nodes  = { n^(h+1) – 1 } /m-1 ( summation of the gp series)
+Now , if the nodes are given then what is the min and max height can be formed  ->
+Min Height => logn[nodes(n-1) +1 ] – 1  
+Max Height => (nodes-1)/n
+
+For strict n ary trees ->
+( External nodes = 2 * Internal nodes + 1  )
+
+
