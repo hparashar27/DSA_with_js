@@ -135,7 +135,19 @@ DFS_Inorder(){
 }
 
 DFS_Postorder(){
-    
+    let data = [];
+    let current = this.root
+    function helperfunction(node){
+        if(node.left){
+            helperfunction(node.left);
+        }
+        if(node.right){
+            helperfunction(node.right);
+        }
+        data.push(node.value);
+    }
+    helperfunction(current);
+    return data;
 }
 
 }
