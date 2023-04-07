@@ -99,6 +99,31 @@ queue.push(node.left)
     }
 return data;
 }
+
+DFS_Preorder(){
+let data = [];
+let current = this.root
+function helperfunction(node){
+    data.push(node.value);
+    if(node.left){
+        helperfunction(node.left);
+    }
+    if(node.right){
+        helperfunction(node.right);
+    }
+}
+helperfunction(current);
+return data;
+}
+
+DFS_Inorder(){
+
+}
+
+DFS_Postorder(){
+
+}
+
 }
 
 let tree = new BinarySearchTree();
