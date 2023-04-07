@@ -101,27 +101,41 @@ return data;
 }
 
 DFS_Preorder(){
-let data = [];
-let current = this.root
-function helperfunction(node){
-    data.push(node.value);
-    if(node.left){
-        helperfunction(node.left);
+    let data = [];
+    let current = this.root
+    function helperfunction(node){
+        data.push(node.value);
+        if(node.left){
+            helperfunction(node.left);
+        }
+        if(node.right){
+            helperfunction(node.right);
+        }
     }
-    if(node.right){
-        helperfunction(node.right);
-    }
-}
-helperfunction(current);
-return data;
+    helperfunction(current);
+    return data;
 }
 
 DFS_Inorder(){
+    let data = [];
+    let current = this.root
+    function helperfunction(node){
+        if(node.left){
+            helperfunction(node.left);
+        }
 
+        data.push(node.value);
+
+        if(node.right){
+            helperfunction(node.right);
+        }
+    }
+    helperfunction(current);
+    return data;
 }
 
 DFS_Postorder(){
-
+    
 }
 
 }
