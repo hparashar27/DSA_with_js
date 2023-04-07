@@ -81,6 +81,24 @@ current=current.right;
         }
         return false
     }
+
+// BREADTH FIRST SEARCH - THIS IS A WAY OF TRAVERSAL BY LEVEL BY LEVEL IN THE TREE
+
+BFS(){
+    let node = this.root,queue = [],data =[];
+    queue.push(node);
+    while(queue.length){
+        node = queue.shift();
+        data.push(node.value);
+        if(node.left){
+queue.push(node.left)
+        }
+        if(node.right){
+            queue.push(node.right)
+        }
+    }
+return data;
+}
 }
 
 let tree = new BinarySearchTree();
@@ -90,3 +108,5 @@ let arr = [12,3,4,32,34,54,24,124]
 for(let i=0;i<arr.length;i++){
     tree.insert(arr[i]);
 }
+
+//  for bfs level-wise traversal - tree.BFS();
