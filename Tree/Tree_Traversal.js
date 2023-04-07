@@ -11,8 +11,9 @@ the algo for the BST iteratively ->
 4- if there is a left property on the node dequeued add it to queue
 5 - if there is a right property on the node dequeued add it to the queue
 6- return the variable that stores the value  
-
 */
+
+// the code for this traversal is in the BST.js file ->
 
 // Depth First search -> In this type of traversal three types of the traversal comes 
 // DEPTH PREORDER TRAVERSAL 
