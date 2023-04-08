@@ -8,3 +8,11 @@ Unlike arrays, hash tables are fast for all of the following operations: finding
 THE HASH PART
 
 To implement a hash table, we'll be using an array.In order to look up values by key, we need a way to convert keys into valid array indices.A function that performs this task is called a hash function.
+
+Dealing with Collisions
+Even with a large array and a great hash function, collisions are inevitable. 
+
+There are many strategies for dealing with collisions, but we'll focus on two:
+
+Separate Chaining
+Linear Probing
