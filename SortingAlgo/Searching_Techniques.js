@@ -58,7 +58,7 @@ if you complete the inner loop then find the match , increment the count and ret
 function Naive_Search(Long,Short){
     let count = 0;
     for(let i = 0;i<Long.length;i++){
-        for(let j =0; Short.length;j++){
+        for(let j =0; j<Short.length;j++){
             if(Short[i] !== Long[i+j]){
                 console.log("BREAK !");
                 break;
