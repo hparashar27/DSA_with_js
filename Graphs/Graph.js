@@ -26,6 +26,14 @@ this.adjacencyList[vertex2].push(vertex1);
             v  => v !== v1
         )
     }
+
+    removeVertex(ver){
+        while(this.adjacencyList[ver].length){
+            this.adajacentVertex = this.adjacencyList[ver].pop();
+            this.removeEdge(ver,adajacentVertex)
+        }
+        delete this.adjacencyList[ver]
+    }
 }
 
 let g = new Graph()
