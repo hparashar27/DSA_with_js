@@ -101,8 +101,8 @@ return data;
 }
 
 DFS_Preorder(){
-    let data = [];
-    let current = this.root
+         let data = [];
+     let current = this.root
     function helperfunction(node){
         data.push(node.value);
         if(node.left){
