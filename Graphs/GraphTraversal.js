@@ -128,6 +128,22 @@ adjacencyList[vertex].forEach(neighbor => {
 dfs(start);
 return result
    }
+
+/*
+
+Iterative ->
+
+let s be a stack
+s.push(start);
+While S is not empty
+vertex = S.pop();
+if vertex is not labelled as discovered
+visit vertex ( add to result list)
+label vertex as discovered
+for each of vertex's neighbour , N do
+S.push(N)
+
+*/
 }
 
 let g = new Graph()
