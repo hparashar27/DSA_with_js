@@ -143,6 +143,21 @@ label vertex as discovered
 for each of vertex's neighbour , N do
 S.push(N)
 
+// Algorithm for the DFS iterative search 
+
+The function should accept a starting node
+Create a stack to help use keep track of vertices (use a list/array)
+Create a list to store the end result, to be returned at the very end
+Create an object to store visited vertices
+Add the starting vertex to the stack, and mark it visited
+While the stack has something in it:
+Pop the next vertex from the stack
+If that vertex hasn't been visited yet:
+​Mark it as visited
+Add it to the result list
+Push all of its neighbors into the stack
+Return the result array
+
 */
 }
 
