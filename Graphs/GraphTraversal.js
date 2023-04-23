@@ -108,7 +108,7 @@ this.adjacencyList[v2] = this.adjacencyList[v2].filter(
        delete this.adjacencyList[ver]
    }
 
-   dfsTraversal(start){
+   dfsTraversalRecursive(start){
 let result = [];
 let visited = {};
 const adjacencyList = this.adjacencyList;
@@ -152,13 +152,31 @@ Create an object to store visited vertices
 Add the starting vertex to the stack, and mark it visited
 While the stack has something in it:
 Pop the next vertex from the stack
-If that vertex hasn't been visited yet:
-​Mark it as visited
-Add it to the result list
-Push all of its neighbors into the stack
+  #If that vertex hasn't been visited yet:
+       *​Mark it as visited
+       *Add it to the result list
+       *Push all of its neighbors into the stack
 Return the result array
-
 */
+
+dfsTraversalIterative(start){
+    const stack = [];
+    const result = [];
+    const visited = {};
+    let CurrentVertex ;
+
+    visited[start] = true;
+    while(stack.length){
+        CurrentVertex = stack.pop();
+        result.push(CurrentVertex);
+        this.adjacencyList[CurrentVertex].forEach(neighbor => {
+            if(!vertex[neighbor]){
+                vertex[neighbor] = true ;
+                stack.push(neighbor);
+            }
+        })    }
+    return result ;
+}
 }
 
 let g = new Graph()
