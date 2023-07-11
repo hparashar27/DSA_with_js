@@ -1,12 +1,15 @@
+// Graph javascript notes -> 
+/* 
+https://cs.slides.com/colt_steele/graphs#/
+*/
+
 // Adjacency list in the graph 
 
 class Graph {
     constructor(){
         this.adjacencyList = {}; // make a object named for the adjacencyList  
     }
-
-
-    addVertex(vertex){
+  addVertex(vertex){
         if(!this.adjacencyList[vertex]){
             this.adjacencyList[vertex] = []
         }

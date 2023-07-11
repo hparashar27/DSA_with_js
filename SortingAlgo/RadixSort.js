@@ -1,11 +1,11 @@
 
         /*
+
         Bubble Sort = O(n^2)
         Insertion Sort = O(n^2)
         Selection Sort = O(n^2)
         Quick Sort = O(nlogn)
         Merge Sort = O(nlogn)
-
         Radix Sort - it doesn't compare between the elements ,it works on the list on the number. It works on the fact that the size of a number is decoded in the number of digits, means more digits big number
 
         */

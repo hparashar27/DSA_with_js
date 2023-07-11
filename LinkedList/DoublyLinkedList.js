@@ -131,7 +131,7 @@ insert(index){
     if(index === this.length) return !!this.push(val);
 
     let newNode = new Node(val);
-let beforenode = this.get(index-1);
+    let beforenode = this.get(index-1);
 
 
 }
